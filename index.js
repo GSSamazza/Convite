@@ -1,14 +1,15 @@
 const address = "R. Mario Ferreira Martins, 8 - Jardim dos Oliveiras, Campinas - SP, 13044-095";
 const place = "Favoritta Pizzaria";
-const eventTitle = "Aniversário — 29 anos";
-const eventTimeText = "08/11 (sexta-feira) às 19:30";
+const eventTitle = " Seu Aniversário de 29 anos";
+const eventTimeText = "08/11 (Sábado) às 19:30";
 
 const mapLink = document.getElementById("mapLink");
 const waLink = document.getElementById("waLink");
 
 mapLink.href = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(place + " " + address)}`;
 const waMsg = `Oi! Estou confirmando presença no ${eventTitle}.\nData: ${eventTimeText}\nLocal: ${place} — ${address}.`;
-waLink.href = `https://wa.me/?text=${encodeURIComponent(waMsg)}`;
+waLink.href = `https://wa.me/+5519994942222?text=${encodeURIComponent(waMsg)}`;
+
 
 // ====== FOGOS VERDES E DOURADOS ======
 (function fireworks(){
